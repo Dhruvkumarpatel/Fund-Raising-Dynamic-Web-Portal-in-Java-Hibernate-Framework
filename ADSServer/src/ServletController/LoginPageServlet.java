@@ -23,7 +23,7 @@ import hibernate_java_files.ManageMain_Master;
 @WebServlet("/LoginPageServlet")
 public class LoginPageServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	
+	 
 	/**
      * @see HttpServlet#HttpServlet()
      */
@@ -46,8 +46,8 @@ public class LoginPageServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		
-		
-		response.getWriter();
+		PrintWriter out = response.getWriter();  
+		response.setContentType("text/html"); 
 		String userId = request.getParameter("userId");
 		
 		String password = request.getParameter("password");
@@ -87,7 +87,7 @@ public class LoginPageServlet extends HttpServlet {
 			
 			 if( m.checkPassword(userId, password) && usertype.equals("donor")){
 				 
-				 RequestDispatcher rd = request.getRequestDispatcher("Donor.jsp");
+				 RequestDispatcher rd = request.getRequestDispatcher("/Donor.jsp");
 				 rd.forward(request, response);
 		//		 response.sendRedirect("Donor.jsp");
 		

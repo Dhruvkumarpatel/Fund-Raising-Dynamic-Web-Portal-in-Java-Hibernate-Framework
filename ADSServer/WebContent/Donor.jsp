@@ -86,7 +86,7 @@ ddsmoothmenu.init({
 	     String userid = request.getAttribute("USERID").toString();
 	     
 	     String email = request.getAttribute("EMAIL").toString();
-	     
+	     //aaesffss
 	     %>
  
      <%=fname %>

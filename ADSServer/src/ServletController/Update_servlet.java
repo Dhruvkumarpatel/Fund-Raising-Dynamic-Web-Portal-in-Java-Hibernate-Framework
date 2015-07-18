@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import hibernate_java_files.ManageDonor;
+import hibernate_java_files.ManageMain_Master;
 
 /**
  * Servlet implementation class Update_servlet
@@ -58,7 +59,11 @@ public class Update_servlet extends HttpServlet {
 			
 			md.addDonor(donorname, address, date, age, phone, details, userid);
 			
-			md.updateDonor(oldUserId);
+			ManageMain_Master m3 = new ManageMain_Master();
+			
+			m3.updateUser(oldUserId);
+			
+			
 			
 		}
 		catch(Exception e)

@@ -75,7 +75,7 @@ public class MAIN_MASTER_SERVLET extends HttpServlet{
 			if(userType.equals("donor"))
 			{
 			
-				 RequestDispatcher rd = request.getRequestDispatcher("Donor.jsp");
+				 RequestDispatcher rd = request.getRequestDispatcher("/Donor.jsp");
 				 rd.forward(request, response);
 				
 				

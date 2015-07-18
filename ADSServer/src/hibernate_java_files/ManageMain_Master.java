@@ -106,15 +106,18 @@ public class ManageMain_Master {
 	   }
 	 
 	 
-	 public void updateUser(int indexid){
+	 public void updateUser(String olduserid){
 		 sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
 	      Session session = sessionFactory.openSession();
 	      Transaction tx = null;
+	      
+	      MAIN_MASTER m3 = null;
+	      
 	      try{
+	         
+	         String hqlquery = "UPDATE MAIN_MASTER set USER_ID = :userid,PASSWORD = :password,EMAIL_ID =:email, FNAME =:fname, LNAME =:lname where USER_ID = :olduserid"; 
+	         Query query = session.createQuery(hqlquery);
 	         tx = session.beginTransaction();
-	         MAIN_MASTER m3 = 
-	                   (MAIN_MASTER)session.get(MAIN_MASTER.class,indexid);  
-	        m3.setFNAME("BHURO");
 			session.update(m3); 
 	         tx.commit();
 	      }catch (HibernateException e) {
