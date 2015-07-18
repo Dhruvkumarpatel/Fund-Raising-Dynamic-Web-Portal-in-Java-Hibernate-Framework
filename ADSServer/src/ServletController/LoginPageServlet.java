@@ -71,6 +71,8 @@ public class LoginPageServlet extends HttpServlet {
 			}
 				String	usertype = m1.getUSER_TYPE();
 			
+				
+				//firstname
 				String fname = m1.getFNAME();
 				
 				request.setAttribute("FNAME", fname);
