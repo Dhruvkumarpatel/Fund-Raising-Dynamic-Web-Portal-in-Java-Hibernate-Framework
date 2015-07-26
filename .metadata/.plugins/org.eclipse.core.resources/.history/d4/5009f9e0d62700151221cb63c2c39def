@@ -1,0 +1,51 @@
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+public class ManageProjectFunding {
+	
+	
+	
+	private static SessionFactory sessionFactory;
+	
+	
+	
+	public String addProjectFunding(int pROJECT_ID, int dONATION_ID, long dATE_OF_FUNDING, int aMOUNT, int tOTAL_AMOUNT)
+	{
+		
+		Session session = sessionFactory.openSession();
+		
+		Transaction tx;
+		
+		int index_id;
+		
+		try{
+			
+			tx = session.beginTransaction();
+			
+			PROJECT_FUNDING pf = new PROJECT_FUNDING(pROJECT_ID, dONATION_ID, dATE_OF_FUNDING, aMOUNT, tOTAL_AMOUNT);
+			
+			index_id = (int) session.save(pf);
+			
+			System.out.println("Id :"+index_id);
+			
+			tx.commit();
+			
+			session.close();
+			
+			
+			
+		}
+		catch(Exception e)
+		{
+			
+			
+			
+		}
+		
+		
+		
+		return null;
+	}
+
+}

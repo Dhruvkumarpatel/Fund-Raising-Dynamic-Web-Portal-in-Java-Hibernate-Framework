@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+   <session-factory>
+   <property name="hibernate.dialect">
+      org.hibernate.dialect.Oracle10gDialect
+   </property>
+   <property name="hibernate.connection.driver_class">
+      oracle.jdbc.driver.OracleDriver
+   </property>
+
+   <!-- Assume test is the database name -->
+   <property name="hibernate.connection.url">
+      jdbc:oracle:thin:@localhost:1521:xe
+   </property>
+   <property name="hibernate.connection.username">
+      system
+   </property>
+   <property name="hibernate.connection.password">
+      dhruv
+   </property>
+
+   <!-- List of XML mapping files -->
+   
+   <mapping resource="DONATION.hbm.xml"/>
+   <mapping resource="DONOR.hbm.xml"/>
+   <mapping resource="FUND.hbm.xml"/>
+    <mapping resource="ORGANIZATION_EXPENSE.hbm.xml"/>
+   <mapping resource="ORGANIZATION_EVENT.hbm.xml"/>
+   <mapping resource="MAIN_MASTER.hbm.xml"/>
+ <!--  
+  
+   
+   
+   
+   
+   <mapping resource="PROJECT.hbm.xml"/>
+   <mapping resource="PROJECT_FUNDING.hbm.xml"/> -->
+
+	  <mapping resource="ORGANIZATION.hbm.xml" />
+</session-factory>
+</hibernate-configuration>

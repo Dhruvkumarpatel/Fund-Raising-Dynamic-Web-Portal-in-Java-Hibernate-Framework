@@ -1,0 +1,127 @@
+import java.util.Iterator;
+import java.util.List;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+public class ManageMain_Master {
+
+	private static SessionFactory sessionFactory;
+
+
+
+	public static void main(String args[])
+	{
+
+
+		try{
+			sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+
+		}
+		catch(Exception e)
+		{
+			System.out.println("Failed to create sssion factory object : "+e);
+		}
+
+
+		ManageMain_Master m1 = new ManageMain_Master();
+
+		m1.adduser("Jay", "patel", "donor", "dhurv@", "DHRUV", "PATEL"); 
+
+		
+		System.out.println("values of list :"+m1.listUserse());
+			
+	
+
+	}
+
+
+
+	public String adduser(String uSER_ID, String pASSWORD, String uSER_TYPE, String eMAIL_ID, String fNAME,
+			String lNAME)
+	{
+
+
+		Session session = sessionFactory.openSession();
+		Transaction tx=null;
+
+		int id_index;
+
+		try{
+
+			tx = session.beginTransaction();
+
+
+			MAIN_MASTER m = new MAIN_MASTER(uSER_ID, pASSWORD, uSER_TYPE, eMAIL_ID, fNAME,
+					lNAME);
+
+			id_index = (int)session.save(m);
+
+			System.out.println("Id : "+id_index);
+
+			tx.commit();
+
+			session.close();
+
+		}
+
+		catch(Exception e)
+		{
+
+			System.out.println("error while adding user:"+e);
+		}
+
+
+		return null;
+	}
+	
+	
+	
+	////////////////////////////////////////List Details//////////////////////////////////////////////////////////////
+	
+	 public List listUserse( ){
+	      Session session = sessionFactory.openSession();
+	      Transaction tx = null;
+	      List users = null;
+	      try{
+	         tx = session.beginTransaction();
+	         users = session.createQuery("FROM MAIN_MASTER").list(); 
+	         
+	      //   System.out.println("vakues of list "+users.get(0));
+	        
+	         tx.commit();
+	      }catch (HibernateException e) {
+	         if (tx!=null) tx.rollback();
+	         e.printStackTrace(); 
+	      }finally {
+	         session.close(); 
+	      }
+	      
+	      return users;
+	   }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+}

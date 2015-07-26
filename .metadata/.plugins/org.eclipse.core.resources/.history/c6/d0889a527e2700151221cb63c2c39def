@@ -1,0 +1,69 @@
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+public class ManageDonor {
+
+		private static SessionFactory sessionFactory;
+		
+		
+		public static void main(String args[])
+		{
+			try{
+				sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+				}catch(Exception e)
+				{
+					System.out.println("Failed to create sssion factory object : "+e);
+				}
+			ManageDonor md = new ManageDonor();
+			
+			md.addDonor("snehit", "california", "11051993" , 25 , "9379798797", "excelleent" , "Dhruv");
+			
+		
+		}
+		public String addDonor(String dONOR_NAME, String dONOR_ADDRESS, long dONOR_DOB, int dONOR_AGE,
+				String dONOR_PHONE, String dONOR_DETAILS, String uSER_ID)
+		{
+			
+			
+			Session session = sessionFactory.openSession();
+			Transaction tx=null;
+			
+			int donor_id;
+			
+			
+			try
+			{
+				tx = session.beginTransaction();
+				
+				DONOR d = new DONOR(dONOR_NAME, dONOR_ADDRESS, dONOR_DOB, dONOR_AGE, dONOR_PHONE, dONOR_DETAILS, uSER_ID);
+				
+				donor_id = (int) session.save(d);
+				
+				System.out.println("Id:"+donor_id);
+				
+				tx.commit();
+				
+				session.close();
+				
+				
+				
+			}
+			catch(Exception e)
+			{
+				
+				
+				System.out.println("Error while adding Organization row: "+e);
+			}
+			
+			
+			return null;
+		}
+		
+		
+		
+	}
+
+
+}

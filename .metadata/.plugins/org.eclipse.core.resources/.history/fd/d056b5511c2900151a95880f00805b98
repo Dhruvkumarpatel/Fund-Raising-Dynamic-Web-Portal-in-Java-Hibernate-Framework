@@ -1,0 +1,101 @@
+package ServletController;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Iterator;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import antlr.collections.List;
+import hibernate_java_files.MAIN_MASTER;
+import hibernate_java_files.ManageMain_Master;
+
+/**
+ * Servlet implementation class LoginPageServlet
+ */
+@WebServlet("/LoginPageServlet")
+public class LoginPageServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	
+	private PrintWriter out;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public LoginPageServlet() {
+        
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		
+		
+		out = response.getWriter();
+		String userId = request.getParameter("userId");
+		
+		String password = request.getParameter("password");
+		
+		HttpSession session = request.getSession(true);
+		
+try{
+			
+			ManageMain_Master m =new  ManageMain_Master();
+			
+		
+			List logindetails = (List) m.listUserse();
+			
+			Iterator e = ((java.util.List) logindetails).iterator();
+			
+		
+			while(e.hasNext())
+			{
+				
+				MAIN_MASTER m1 = (MAIN_MASTER) e.next();
+				
+				String userid = m1.getUSER_ID();
+				
+				out.println(userid);
+				
+				
+				String pwd = m1.getPASSWORD();
+				
+				
+				
+				
+				
+				
+				
+			}
+			
+			
+		}
+		catch(Exception e)
+		{
+			
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+		
+	}
+
+}

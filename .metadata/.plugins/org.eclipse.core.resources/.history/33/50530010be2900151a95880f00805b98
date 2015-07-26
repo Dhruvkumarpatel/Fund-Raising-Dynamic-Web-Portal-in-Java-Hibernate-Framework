@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Newspaper Template, About</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<!--
+Template 2060 Newspaper 
+http://www.tooplate.com/view/2060-newspaper
+-->
+<link href="tooplate_style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css" href="ddsmoothmenu.css" />
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/ddsmoothmenu.js">
+
+/***********************************************
+* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "tooplate_menu", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+</script> 
+
+
+</head>
+
+<body>
+
+<div id="tooplate_wrapper">
+	
+    <div id="tooplate_header">
+        <div id="site_title"><h1><a href="#"></a></h1></div>
+        <div id="tooplate_menu" class="ddsmoothmenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="selected">About</a>
+                    <ul>
+                        <li><a href="#">Sub menu 1</a></li>
+                        <li><a href="#">Sub menu 1</a></li>
+                        <li><a href="#">Sub menu 1</a></li>
+                  </ul>
+                </li>
+                <li><a href="portfolio.html">Portfolio</a>
+                    <ul>
+                        <li><a href="#">Sub menu 1</a></li>
+                        <li><a href="#">Sub menu 1</a></li>
+                        <li><a href="#">Sub menu 1</a></li>
+                        <li><a href="#">Sub menu 1</a></li>
+                        <li><a href="#">Sub menu 1</a></li>
+                  </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <br style="clear: left" />
+        </div> <!-- end of tooplate_menu -->
+    </div> <!-- END of tooplate_header -->
+    
+    <div id="tooplate_main">
+		<div id="content" class="float_l">
+        
+        	<h2>Lorem Ipsum Dolor Sit Amet</h2>
+            <div class="image_frame image_fl"><span></span><img src="images/tooplate_image_01.jpg" alt="" /></div>
+            <p><em>This template is provided by tooplate website. Duis ornare nibh non libero blandit et dapibus quam tincidunt. Duis venenatis elit id tellus blandit adipiscing.</em></p>
+           	<p>Donec in erat id libero pharetra condimentum sed nec ligula. Vivamus elementum nibh elit. Etiam malesuada, mauris id porttitor sollicitudin, arcu eros vestibulum nibh, sed ornare erat risus et justo. Curabitur consequat sagittis ultrices. Suspendisse a dolor nisi. Duis semper, orci eu sollicitudin luctus, nibh leo bibendum lectus, ac lobortis lorem sapien quis ante.</p>
+            <div class="image_frame image_fr"><span></span><img src="images/tooplate_image_02.jpg" alt="" /></div>
+            <p>Aenean vitae elit neque. Fusce non tristique odio. Suspendisse metus mi, fringilla sit amet condimentum sed, elementum non dolor. Nulla magna elit, posuere at pulvinar id, suscipit porttitor neque. Pellentesque feugiat adipiscing mi nec faucibus. Suspendisse feugiat porttitor fermentum. Praesent lorem urna, dapibus vitae pellentesque id, ullamcorper quis ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce a purus sit amet dui placerat tincidunt id quis nibh.</p>
+            
+            <div class="cleaner h40"></div>
+            
+            <div class="col one_third">
+                <h5>Services</h5>
+                <ul class="tmo_list">
+                    <li>Integer placerat dolor vel</li>
+                    <li>Condimentum vulputate augue</li>
+                    <li>Felis pharetra felis sed</li>
+                    <li>Tortor mi in massa donec</li>
+                    <li>Dolor vel condimentum</li>
+                    <li>Augue felis pharetra felis sed</li>
+                    <li>Vulputate tortor mi in massa</li>
+                </ul>
+            </div>
+            <div class="col one_third no_margin_right">
+                <h5>Flickr Stream</h5>
+                <ul class="flickr_stream">
+                    <li><a href="#"><img class="image_frame" src="images/tooplate_image_02.png" alt="" /></a></li>
+                    <li><a href="#"><img class="image_frame" src="images/tooplate_image_03.png" alt="" /></a></li>
+                    <li class="no_margin_right"><a href="#"><img class="image_frame" src="images/tooplate_image_04.png" alt="" /></a></li>
+                    <li><a href="#"><img class="image_frame" src="images/tooplate_image_05.png" alt="" /></a></li>
+                    <li><a href="#"><img class="image_frame" src="images/tooplate_image_06.png" alt="" /></a></li>
+                    <li class="no_margin_right"><a href="#"><img class="image_frame" src="images/tooplate_image_07.png" alt="" /></a></li>
+                </ul>
+			</div>        
+        </div>
+        
+        <div id="sidebar" class="float_r">
+        	<a href="#"><img src="images/ad_300.jpg" alt="image" /></a>
+            
+            <div class="cleaner h40"></div>
+            
+            <h5>Recent Posts</h5>
+            <div class="rp_pp">
+                <a href="#">Integer venenatis pharetra magna vitae ultrices</a>
+                <p>Feb 23, 2048 - 20 Comments</p>
+                <div class="cleaner"></div>
+            </div>
+            <div class="rp_pp">
+                <a href="#">Vestibulum quis nulla nunc, nec lobortis nunc.</a>
+                <p>Feb 16, 2048 - 20 Comments</p>
+                <div class="cleaner"></div>
+            </div>
+            <div class="rp_pp">
+                <a href="#">Pellentesque convallis tristique mauris.</a>
+                <p>Feb 10, 2048 - 20 Comments</p>
+                <div class="cleaner"></div>
+            </div>
+            
+        </div>        
+        
+       
+        <div class="cleaner"></div>
+	</div> <!-- END of tooplate_main -->   
+    
+</div> <!-- END of tooplate_wrapper -->
+
+<div id="tooplate_bottom_wrapper">
+	<div id="tooplate_bottom">
+    	<div class="col one_fourth">
+        	<h4>Categories</h4>
+            <ul class="footer_list">
+            	<li><a href="#">HTML CSS Layouts</a></li>
+                <li><a href="#">Website Templates</a></li>
+                <li><a href="#">Wordpress Themes</a></li>
+                <li><a href="#">Web Design Blog</a></li>
+                <li><a href="#">Art and Illustration</a></li>
+			</ul>
+        </div>
+        <div class="col one_fourth">
+        	<h4>Pages</h4>
+            <ul class="footer_list">
+            	<li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+			</ul>
+        </div>
+        <div class="col one_fourth">
+        	<h4>Follow Us</h4>	
+            
+            <div class="footer_social_button">
+                <a href="#"><img src="images/facebook.png" alt="facebook" /></a>
+                <a href="#"><img src="images/flickr.png" alt="flickr" /></a>
+                <a href="#"><img src="images/twitter.png" alt="twitter" /></a>
+                <a href="#"><img src="images/youtube.png" alt="youtube" /></a>
+                <a href="#"><img src="images/feed.png" alt="rss" /></a>
+			</div>
+            
+        </div>
+        
+        <div class="col one_fourth no_margin_right">
+        	<h4>Twitter</h4>
+            <ul class="twitter_post">
+	            <li>Suspendisse at scelerisque urna. Aenean tincidunt massa in tellus varius ultricies. <a href="#">http://bit.ly/13IwZO</a></li>
+			</ul>
+        </div>
+        <div class="cleaner"></div>
+    </div> <!-- END of tooplate_bottom -->
+</div> <!-- END of tooplate_bottom_wrapper -->
+
+<div id="tooplate_footer_wrapper">
+	<div id="tooplate_footer">
+    	 Copyright © 2048 Your Company Name 
+    </div> <!-- END of tooplate_footer -->
+</div> <!-- END of tooplate_footer_wrapper -->
+
+</body>
+</html>

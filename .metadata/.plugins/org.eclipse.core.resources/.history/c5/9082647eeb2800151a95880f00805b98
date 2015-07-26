@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Newspaper Template, Portfolio</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<!--
+Template 2060 Newspaper 
+http://www.tooplate.com/view/2060-newspaper
+-->
+<link href="tooplate_style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css" href="ddsmoothmenu.css" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/ddsmoothmenu.js">
+
+/***********************************************
+* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "tooplate_menu", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+</script> 
+
+<script type="text/javascript" src="js/jquery-1-4-2.min.js"></script> 
+<link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" /> 
+<script type="text/JavaScript" src="js/slimbox2.js"></script> 
+
+
+
+</head>
+
+<body>
+
+<div id="tooplate_wrapper">
+	
+    <div id="tooplate_header">
+        <div id="site_title"><h1><a href="#"></a></h1></div>
+        <div id="tooplate_menu" class="ddsmoothmenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a>
+                    <ul>
+                        <li><a href="#">Sub menu 1</a></li>
+                        <li><a href="#">Sub menu 1</a></li>
+                        <li><a href="#">Sub menu 1</a></li>
+                  </ul>
+                </li>
+                <li><a href="portfolio.html">Portfolio</a>
+                    <ul>
+                        <li><a href="#">Sub menu 1</a></li>
+                        <li><a href="#">Sub menu 1</a></li>
+                        <li><a href="#">Sub menu 1</a></li>
+                        <li><a href="#">Sub menu 1</a></li>
+                        <li><a href="#">Sub menu 1</a></li>
+                  </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <br style="clear: left" />
+        </div> <!-- end of tooplate_menu -->
+    </div> <!-- END of tooplate_header -->
+    
+    <div id="tooplate_main">
+		<div id="content" class="float_r">
+        	<ul id="gallery">
+                <li><a href="images/gallery/01.jpg" rel="lightbox[portfolio]"><img src="images/gallery/01.jpg" alt="image 1" /></a></li>
+                <li><a href="images/gallery/02.jpg" rel="lightbox[portfolio]"><img src="images/gallery/02.jpg" alt="image 2" /></a></li>
+                <li><a href="images/gallery/03.jpg" rel="lightbox[portfolio]"><img src="images/gallery/03.jpg" alt="image 3" /></a></li>
+                <li><a href="images/gallery/04.jpg" rel="lightbox[portfolio]"><img src="images/gallery/04.jpg" alt="image 4" /></a></li>
+                <li><a href="images/gallery/05.jpg" rel="lightbox[portfolio]"><img src="images/gallery/05.jpg" alt="image 5" /></a></li>
+                
+                <li><a href="images/gallery/06.jpg" rel="lightbox[portfolio]"><img src="images/gallery/06.jpg" alt="image 6" /></a></li>
+                <li><a href="images/gallery/07.jpg" rel="lightbox[portfolio]"><img src="images/gallery/07.jpg" alt="image 7" /></a></li>
+                <li><a href="images/gallery/08.jpg" rel="lightbox[portfolio]"><img src="images/gallery/08.jpg" alt="image 8" /></a></li>
+                <li><a href="images/gallery/09.jpg" rel="lightbox[portfolio]"><img src="images/gallery/09.jpg" alt="image 9" /></a></li>
+                <li><a href="images/gallery/10.jpg" rel="lightbox[portfolio]"><img src="images/gallery/10.jpg" alt="image 10" /></a></li>
+                
+                <li><a href="images/gallery/11.jpg" rel="lightbox[portfolio]"><img src="images/gallery/11.jpg" alt="image 11" /></a></li>
+                <li><a href="images/gallery/12.jpg" rel="lightbox[portfolio]"><img src="images/gallery/12.jpg" alt="image 12" /></a></li>
+                <li><a href="images/gallery/13.jpg" rel="lightbox[portfolio]"><img src="images/gallery/13.jpg" alt="image 13" /></a></li>
+                <li><a href="images/gallery/14.jpg" rel="lightbox[portfolio]"><img src="images/gallery/14.jpg" alt="image 14" /></a></li>
+                <li><a href="images/gallery/15.jpg" rel="lightbox[portfolio]"><img src="images/gallery/15.jpg" alt="image 15" /></a></li>
+			</ul>
+            
+            <div class="cleaner"></div>
+            <div class="pagging">
+                <ul>
+                    <li><a href="#" target="_parent">Previous</a></li>
+                    <li><a href="#" target="_parent">1</a></li>
+                    <li><a href="#" target="_parent">2</a></li>
+                    <li><a href="#" target="_parent">3</a></li>
+                    <li><a href="#" target="_parent">4</a></li>
+                    <li><a href="#" target="_parent">5</a></li>
+                    <li><a href="#" target="_parent">6</a></li>
+                    <li><a href="#" target="_parent">Next</a></li>
+                </ul>
+            </div>	
+        </div>
+        
+        <div id="sidebar" class="float_l">
+        	<a href="#"><img src="images/ad_300.jpg" alt="image" /></a>
+            
+            <div class="cleaner h40"></div>
+            
+            <h5>Categories</h5>
+           	<ul class="tmo_list">
+                <li><a href="#">Nullam ornare vulputate</a></li>
+                <li><a href="#">Vestibulum erat erat</a></li>
+                <li><a href="#">Pellentesque eget magna</a></li>
+                <li><a href="#">Etiam tempus quam eu odio</a></li>
+                <li><a href="#">Donec tempor dapibus</a></li>
+            </ul>
+            
+            <div class="cleaner h40"></div>
+            
+        	<h5>Flickr Stream</h5>
+            <ul class="flickr_stream">
+                <li><a href="#"><img class="image_frame" src="images/tooplate_image_02.png" alt="" /></a></li>
+                <li><a href="#"><img class="image_frame" src="images/tooplate_image_03.png" alt="" /></a></li>
+                <li class="no_margin_right"><a href="#"><img class="image_frame" src="images/tooplate_image_04.png" alt="" /></a></li>
+                <li><a href="#"><img class="image_frame" src="images/tooplate_image_05.png" alt="" /></a></li>
+                <li><a href="#"><img class="image_frame" src="images/tooplate_image_06.png" alt="" /></a></li>
+                <li class="no_margin_right"><a href="#"><img class="image_frame" src="images/tooplate_image_07.png" alt="" /></a></li>
+            </ul>
+            
+        </div>        
+        
+       
+        <div class="cleaner"></div>
+	</div> <!-- END of tooplate_main -->   
+    
+</div> <!-- END of tooplate_wrapper -->
+
+<div id="tooplate_bottom_wrapper">
+	<div id="tooplate_bottom">
+    	<div class="col one_fourth">
+        	<h4>Categories</h4>
+            <ul class="footer_list">
+            	<li><a href="#">HTML CSS Layouts</a></li>
+                <li><a href="#">Website Templates</a></li>
+                <li><a href="#">Wordpress Themes</a></li>
+                <li><a href="#">Web Design Blog</a></li>
+                <li><a href="#">Art and Illustration</a></li>
+			</ul> 
+        </div>
+        <div class="col one_fourth">
+        	<h4>Pages</h4>
+            <ul class="footer_list">
+            	<li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+			</ul>
+        </div>
+        <div class="col one_fourth">
+        	<h4>Follow Us</h4>	
+            
+            <div class="footer_social_button">
+                <a href="#"><img src="images/facebook.png" alt="facebook" /></a>
+                <a href="#"><img src="images/flickr.png" alt="flickr" /></a>
+                <a href="#"><img src="images/twitter.png" alt="twitter" /></a>
+                <a href="#"><img src="images/youtube.png" alt="youtube" /></a>
+                <a href="#"><img src="images/feed.png" alt="rss" /></a>
+			</div>
+            
+        </div>
+        
+        <div class="col one_fourth no_margin_right">
+        	<h4>Twitter</h4>
+            <ul class="twitter_post">
+	            <li>Suspendisse at scelerisque urna. Aenean tincidunt massa in tellus varius ultricies. <a href="#">http://bit.ly/13IwZO</a></li>
+			</ul>
+        </div>
+        <div class="cleaner"></div>
+    </div> <!-- END of tooplate_bottom -->
+</div> <!-- END of tooplate_bottom_wrapper -->
+
+<div id="tooplate_footer_wrapper">
+	<div id="tooplate_footer">
+    	 Copyright © 2048 Your Company Name 
+    </div> <!-- END of tooplate_footer -->
+</div> <!-- END of tooplate_footer_wrapper -->
+
+</body>
+</html>

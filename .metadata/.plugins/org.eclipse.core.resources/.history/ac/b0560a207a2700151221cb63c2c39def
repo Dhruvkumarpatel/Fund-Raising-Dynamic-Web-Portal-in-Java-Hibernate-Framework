@@ -1,0 +1,50 @@
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+public class ManageFund {
+
+	private static SessionFactory sessionFactory;
+	
+	
+	public String addFund(int fUND_AMOUNT, int tOTAL_FUND_AMOUNT, int oRG_ID)
+	{
+		
+		
+		Session session = sessionFactory.openSession();
+		Transaction tx=null;
+		
+		int fund_id;
+		
+		
+		try
+		{
+			tx = session.beginTransaction();
+			
+			FUND f = new  FUND(fUND_AMOUNT, tOTAL_FUND_AMOUNT, oRG_ID);
+			
+			fund_id = (int) session.save(f);
+			
+			System.out.println("Id:"+fund_id);
+			
+			tx.commit();
+			
+			session.close();
+			
+			
+			
+		}
+		catch(Exception e)
+		{
+			
+			
+			System.out.println("Error while adding Organization row: "+e);
+		}
+		
+		
+		return null;
+	}
+	
+	
+	
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ADSServer">
+        <dependent-module archiveName="ojdbc6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/E:/wright state university/Advanced Database System/project/coding part/ojdbc6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/ADSServer/build/classes"/>
+        <property name="context-root" value="ADSServer"/>
+    </wb-module>
+</project-modules>

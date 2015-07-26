@@ -1,0 +1,71 @@
+package ServletController;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import hibernate_java_files.ManageDonor;
+
+/**
+ * Servlet implementation class Update_servlet
+ */
+@WebServlet("/Update_servlet")
+public class Update_servlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public Update_servlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		String userid = request.getParameter("userId");
+		String password = request.getParameter("password");
+		String Repassword = request.getParameter("Repassword");
+		String email = request.getParameter("email");
+		String fname = request.getParameter("fname");
+		String lname = request.getParameter("lname");
+		String address = request.getParameter("address");
+		String date = request.getParameter("date");
+		int age = Integer.parseInt(request.getParameter("age"));
+		String phone = request.getParameter("phone");
+		String details = request.getParameter("details");
+		
+		String donorname = fname.concat(lname);
+		
+		try{
+			
+			ManageDonor md = new ManageDonor();
+			
+			md.addDonor(donorname, dONOR_ADDRESS, dONOR_DOB, dONOR_AGE, dONOR_PHONE, dONOR_DETAILS, uSER_ID)
+			
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+	}
+
+}

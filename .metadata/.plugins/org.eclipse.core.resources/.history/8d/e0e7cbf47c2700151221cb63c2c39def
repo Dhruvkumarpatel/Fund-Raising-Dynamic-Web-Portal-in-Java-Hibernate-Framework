@@ -1,0 +1,61 @@
+	public class ManageFund {
+
+		private static SessionFactory sessionFactory;
+		
+		
+		public static void main(String args[])
+		{
+			try{
+				sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+				}catch(Exception e)
+				{
+					System.out.println("Failed to create sssion factory object : "+e);
+				}
+			
+			
+		
+		}
+		public String addFund(int fUND_AMOUNT, int tOTAL_FUND_AMOUNT, int oRG_ID)
+		{
+			
+			
+			Session session = sessionFactory.openSession();
+			Transaction tx=null;
+			
+			int donor_id;
+			
+			
+			try
+			{
+				tx = session.beginTransaction();
+				
+				DONOR d = new DONOR(dONOR_NAME, dONOR_ADDRESS, dONOR_DOB, dONOR_AGE, dONOR_PHONE, dONOR_DETAILS, uSER_ID);
+				
+				donor_id = (int) session.save(d);
+				
+				System.out.println("Id:"+donor_id);
+				
+				tx.commit();
+				
+				session.close();
+				
+				
+				
+			}
+			catch(Exception e)
+			{
+				
+				
+				System.out.println("Error while adding Organization row: "+e);
+			}
+			
+			
+			return null;
+		}
+		
+		
+		
+	}
+
+
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.awt.MenuBar"/>
+<fullyQualifiedTypeName name="java.awt.Menu"/>
+<fullyQualifiedTypeName name="java.awt.MenuItem"/>
+<fullyQualifiedTypeName name="ManageAuthor"/>
+<fullyQualifiedTypeName name="AUTHOR"/>
+<fullyQualifiedTypeName name="javax.persistence.Column"/>
+<fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
+<fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+<fullyQualifiedTypeName name="javax.persistence.Id"/>
+<fullyQualifiedTypeName name="ManageOrganization"/>
+<fullyQualifiedTypeName name="ORGANIZATION"/>
+<fullyQualifiedTypeName name="ManageMain_Master"/>
+<fullyQualifiedTypeName name="ManageOrgEvent"/>
+<fullyQualifiedTypeName name="ORGANIZATION_EXPENSE"/>
+<fullyQualifiedTypeName name="ManageOrgExpense"/>
+<fullyQualifiedTypeName name="org.hibernate.SessionFactory.SessionFactoryOptions"/>
+<fullyQualifiedTypeName name="FUND"/>
+<fullyQualifiedTypeName name="ManageFund"/>
+<fullyQualifiedTypeName name="DONOR"/>
+<fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
+<fullyQualifiedTypeName name="org.hibernate.cfg.Configuration"/>
+<fullyQualifiedTypeName name="DONATION"/>
+<fullyQualifiedTypeName name="ManageDonation"/>
+<fullyQualifiedTypeName name="PROJECT"/>
+<fullyQualifiedTypeName name="ManageProject"/>
+<fullyQualifiedTypeName name="org.hibernate.Session"/>
+<fullyQualifiedTypeName name="org.hibernate.Transaction"/>
+<fullyQualifiedTypeName name="PROJECT_FUNDING"/>
+<fullyQualifiedTypeName name="ManageProjectFunding"/>
+<fullyQualifiedTypeName name="org.hibernate.mapping.List"/>
+<fullyQualifiedTypeName name="antlr.collections.List"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="org.hibernate.HibernateException"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="MAIN_MASTER"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter.DEFAULT"/>
+<fullyQualifiedTypeName name="hibernate_java_files.ManageMain_Master"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+</qualifiedTypeNameHistroy>
