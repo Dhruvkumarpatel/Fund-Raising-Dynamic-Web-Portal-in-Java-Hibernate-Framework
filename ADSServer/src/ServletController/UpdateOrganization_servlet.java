@@ -83,7 +83,7 @@ public class UpdateOrganization_servlet extends HttpServlet {
 			param.add(lname);
 			param.add(oldUserId);
 			
-			
+			////fasdfasfasdf
 		
 			m3.updateUser(indexid,param);
 			
