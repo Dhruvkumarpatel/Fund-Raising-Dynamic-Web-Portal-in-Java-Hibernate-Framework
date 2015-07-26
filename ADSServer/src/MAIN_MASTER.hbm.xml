@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="hibernate_java_files.MAIN_MASTER" table="MAIN_MASTER">
+      <meta attribute="class-description">
+         This class contains the whole user(organization/donor) details. 
+      </meta>
+      <id name="ID_INDEX" column="ID_INDEX" type="int">
+         <generator class="sequence">
+            <param name="sequence">SEQUENCE1</param>
+          </generator>
+      </id>
+    
+      <property name="USER_ID" column="USER_ID" type="string"/>
+      <property name="PASSWORD" column="PASSWORD" type="string"/>
+      <property name="USER_TYPE" column="USER_TYPE" type="string"/>
+      <property name="EMAIL_ID" column="EMAIL_ID" type="string"/>
+      <property name="FNAME" column="FNAME" type="string"/>
+      <property name="LNAME" column="LNAME" type="string"/>
+      
+   </class>
+</hibernate-mapping>

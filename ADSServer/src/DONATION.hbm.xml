@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="hibernate_java_files.DONATION" table="DONATION">
+      <meta attribute="class-description">
+         This class contains the donation details. 
+      </meta>
+      <id name="DONATION_ID" column="DONATION_ID" type="int">
+         <generator class="sequence">
+            <param name="sequence">SEQUENCE1</param>
+          </generator>
+      </id>
+    
+    <!--   <property name="ORG_ID" column="ORG_ID" type="string"/> --> 
+      <property name="DONATION_TYPE" column="DONATION_TYPE" type="string"/>
+      <property name="DATE_OF_DONATION" column="DATE_OF_DONATION" type="string"/>
+      <property name="ORG_ID" column="ORG_ID" type="int"/>
+      <property name="DONOR_ID" column="DONOR_ID" type="int"/>
+    
+     
+    
+      
+   </class>
+</hibernate-mapping>
